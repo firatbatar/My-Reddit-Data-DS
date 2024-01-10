@@ -48,7 +48,16 @@ Using Reddit API, I scrapped the following data:
 
 Requested data is read by scraper script and after scrapping, it is saved as new .csv files.  
 
-Then the data is processed in `data_process.ipynb` file. The process includes cleaning and structuring the data. For details on every step for each different group of data, see the mentioned file.
+Then the data is processed in `data_process.ipynb` file. The process includes cleaning and structuring the data. For details on every step for each different group of data, see the mentioned file.  
+
+### Data Processing
+
+The requested data and the scrapped data include many unused information and also some information that needs to be preprocessed. For all the details on the data processing, see `data_process.ipynb` file. But here is a summary of the process:  
+
+-  **Subreddits:** This data also holds followed users, but I won't need them.  
+- **Login History:** The date is in UTC, so I converted it to my local time and extracted the day name. Also IP addresses are not needed.  
+- **Voted Posts and Comments:** The data includes some URLs about the objects, I have extracted the subreddit names from them, but I don't need the URLs themselves. Also, I have compared this data with subscribed subreddits and created a new column to indicate if the subreddit is subscribed or not.  
+- **Created Posts and Comments:** This also includes some URLs, I have extracted the subreddit names from them and dropped the URLs. Again I've checked if the subreddit is subscribed or not. Also dropped the unnecessary columns.  
 
 ### Data Visualizations
 
