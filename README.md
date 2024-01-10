@@ -61,7 +61,7 @@ The requested data and the scrapped data include many unused information and als
 
 ### Data Visualizations
 
-Almost all the visualizations, the ones that are specific to an analysis are not here, are made in `data_visualization.ipynb` file. During the EDA, I have created many visualizations to understand the data better and to come up with interesting questions. Not all the visualizations are used and included in the final report. However, all can be found in the notebook.  
+Almost all the visualizations, the ones that are specific to an analysis are not here, are made in `data_visualization.ipynb` file. During the EDA, I have created many visualizations to understand the data better and to come up with interesting questions. Not all the visualizations are used and included in the final report. However, all can be found in the notebook and also in the [figures folder](/figures/img/).  
 
 I have used Altair for most of the visualizations. Altair is a declarative statistical visualization library for Python, based on Vega. I used Altair because it is very easy to use and very powerful, I wanted to create all my visualizations interactive so that EDA and final report is more clear and interesting.
 
