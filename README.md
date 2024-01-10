@@ -8,7 +8,7 @@ This project will be an analysis on my own <a href="https://www.reddit.com/" tar
 ## Motivation
 
 While thinking about a project I thought I might analyze my interaction with the outside world which is done mostly through social media. Since Reddit is my primary social media platform, I decided to go with that.  
-The motivation of this analysis is to gain a deeper understanding of my own Reddit usage patterns. By analyzing the subreddits I'm subscribed to, when I am active on Reddit, and my engagement with posts and comments, I aim to gain insights into my online behavior and interests.
+The motivation of this analysis is to gain a deeper understanding of my own Reddit usage patterns. By analyzing the subreddits I am subscribed to, when I am active on Reddit, and my engagement with posts and comments, I aim to gain insights into my online behavior and interests.
 
 ### Tools
 
@@ -54,10 +54,10 @@ Then the data is processed in `data_process.ipynb` file. The process includes cl
 
 The requested data and the scrapped data include many unused information and also some information that needs to be preprocessed. For all the details on the data processing, see `data_process.ipynb` file. But here is a summary of the process:  
 
--  **Subreddits:** This data also holds followed users, but I won't need them.  
+-  **Subreddits:** This data also holds followed users, but I did not need them.  
 - **Login History:** The date is in UTC, so I converted it to my local time and extracted the day name. Also IP addresses are not needed.  
-- **Voted Posts and Comments:** The data includes some URLs about the objects, I have extracted the subreddit names from them, but I don't need the URLs themselves. Also, I have compared this data with subscribed subreddits and created a new column to indicate if the subreddit is subscribed or not.  
-- **Created Posts and Comments:** This also includes some URLs, I have extracted the subreddit names from them and dropped the URLs. Again I've checked if the subreddit is subscribed or not. Also dropped the unnecessary columns.  
+- **Voted Posts and Comments:** The data includes some URLs about the objects, I have extracted the subreddit names from them, but I do not need the URLs themselves. Also, I have compared this data with subscribed subreddits and created a new column to indicate if the subreddit is subscribed or not.  
+- **Created Posts and Comments:** This also includes some URLs, I have extracted the subreddit names from them and dropped the URLs. Again I have checked if the subreddit is subscribed or not. Also dropped the unnecessary columns.  
 
 ### Data Visualizations
 
