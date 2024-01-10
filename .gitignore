@@ -1,5 +1,6 @@
 venv/
 .ipynb_checkpoints/
 .env
-data/
+data/raw_data/
+data/scrapped_data/
 docs/hugo/

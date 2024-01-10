@@ -1,0 +1,117 @@
+{
+    "Monday": {
+        "dayName": "Monday",
+        "classes": [
+            {
+                "name": "Introduction to Industrial Engineering",
+                "code": "ENS 208",
+                "startTime": "13:40",
+                "endTime": "15:30"
+            },
+            {
+                "name": "Advanced Programming",
+                "code": "CS 204",
+                "startTime": "16:40",
+                "endTime": "18:30"
+            }
+        ]
+    },
+    "Tuesday": {
+        "dayName": "Tuesday",
+        "classes": [
+            {
+                "name": "Macroeconomics",
+                "code": "ECON 202",
+                "startTime": "10:40",
+                "endTime": "12:30"
+            },
+            {
+                "name": "Discrete Mathematics",
+                "code": "MATH 204",
+                "startTime": "14:40",
+                "endTime": "15:30"
+            },
+            {
+                "name": "Introduction to Data Science - Recitation",
+                "code": "CS 210R",
+                "startTime": "16:40",
+                "endTime": "18:30"
+            }
+        ]
+    },
+    "Wednesday": {
+        "dayName": "Wednesday",
+        "classes": [
+            {
+                "name": "Advanced Programming",
+                "code": "CS 204",
+                "startTime": "12:40",
+                "endTime": "13:30"
+            },
+            {
+                "name": "Introduction to Industrial Engineering",
+                "code": "ENS 208",
+                "startTime": "14:40",
+                "endTime": "15:30"
+            },
+            {
+                "name": "Introduction to Data Science",
+                "code": "CS 210",
+                "startTime": "16:40",
+                "endTime": "17:30"
+            }
+        ]
+    },
+    "Thursday": {
+        "dayName": "Thursday",
+        "classes": [
+            {
+                "name": "Discrete Mathematics",
+                "code": "MATH 204",
+                "startTime": "10:40",
+                "endTime": "12:30"
+            },
+            {
+                "name": "Macroeconomics",
+                "code": "ECON 202",
+                "startTime": "12:40",
+                "endTime": "13:30"
+            }
+        ]
+    },
+    "Friday": {
+        "dayName": "Friday",
+        "classes": [
+            {
+                "name": "Advanced Programming Lab",
+                "code": "CS 204L",
+                "startTime": "10:40",
+                "endTime": "12:30"
+            },
+            {
+                "name": "Introduction to Data Science",
+                "code": "CS 210",
+                "startTime": "12:40",
+                "endTime": "14:30"
+            },
+            {
+                "name": "Macroeconomics - Recitation",
+                "code": "ECON 202R",
+                "startTime": "14:40",
+                "endTime": "15:30"
+            },
+            {
+                "name": "Discrete Mathematics - Recitation",
+                "code": "MATH 204R",
+                "startTime": "15:40",
+                "endTime": "16:30"
+            },
+            {
+                "name": "Introduction to Industrial Engineering - Recitation",
+                "code": "ENS 208R",
+                "startTime": "16:40",
+                "endTime": "17:30"
+            }
+        ]
+    }
+}
