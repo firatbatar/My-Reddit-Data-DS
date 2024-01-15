@@ -95,9 +95,14 @@ The requested data and the scrapped data include many unused information and als
 
 ## Data Visualizations
 
-Almost all the visualizations, the ones that are specific to an analysis are not here, are made in `data_visualization.ipynb` file. During the EDA, I have created many visualizations to understand the data better and to come up with interesting questions. Not all the visualizations are used and included in the final report. However, all can be found in the notebook. (If they are not visible for some reason they are also in the [figures folder](/figures/img/))  
-
+Almost all the visualizations, the ones that are specific to an analysis are not here, are made in `data_visualization.ipynb` file. During the EDA, I have created many visualizations to understand the data better and to come up with interesting questions. Not all the visualizations are used and included in the final report.  
 I have used Altair for most of the visualizations. I have used it because it is very easy to use and very powerful, I wanted to create all my visualizations interactive so that EDA and final report is more clear and interesting.
+
+Since GitHub's preview does not execute the JavaScript code in the notebooks which is required to display Altair's interactive charts, you can use corresponding links to see the visualizations.
+- [`data_visualization.ipynb`](https://nbviewer.org/github/firatbatar/reddit-usage-analysis/blob/bfce85f3b733231e2d931213c66202e13fa9ab8e/data_visualization.ipynb)  
+- [`data_analysis.ipynb`](https://nbviewer.org/github/firatbatar/reddit-usage-analysis/blob/bfce85f3b733231e2d931213c66202e13fa9ab8e/data_analysis.ipynb)  
+
+Also the static images of the visualizations are available in the correponding [`figures`](/figures/img/) folder.
 
 ## Data Analysis
 
