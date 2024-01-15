@@ -11,14 +11,14 @@
     <meta name="author" content="Fırat Batar">
     
 
-    <meta name="description" content="Fırat Batar's Reddit Analysis on 'My Type of Activity on Reddit'">
+    <meta name="description" content="Fırat Batar's Reddit Analysis on 'The Type of My Activity on Reddit'">
     <meta name="keywords" content="Fırat Batar, []">
     
-    <meta property="og:title" content="My Type of Activity on Reddit">
+    <meta property="og:title" content="The Type of My Activity on Reddit">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://firatbatar.com/my-reddit-data/analysis">
     <meta property="og:site_name" content="firatbatar/my-reddit-analysis"/>
-    <meta property="og:description" content="Fırat Batar's Reddit Analysis on 'My Type of Activity on Reddit'.">
+    <meta property="og:description" content="Fırat Batar's Reddit Analysis on 'The Type of My Activity on Reddit'.">
 
 
 
@@ -40,7 +40,7 @@
     
     <script src="/my-reddit-data/jquery/jquery-3.7.1.min.js"></script>
     
-    <title>My Type of Activity on Reddit</title>
+    <title>The Type of My Activity on Reddit</title>
 </head>
 <body class="bg-body-secondary">
     <header class="sticky-top bg-dark" id="header">
@@ -162,7 +162,7 @@
 </style>
 
 <div class="container py-5">
-    <h1 class="text-center">My Type of Activity on Reddit</h1>
+    <h1 class="text-center">The Type of My Activity on Reddit</h1>
 
     <div class="my-5 pb-5">
         <!-- Styling -->
@@ -254,7 +254,7 @@
         <figcaption>Figure 4.1 - Created and Voted Counts by Subreddits</figcaption>
     </figure>
 </div>
-<p>After combining <em>&ldquo;created&rdquo;</em> and <em>&ldquo;voted&rdquo;</em> data in a crosstable, I have perfomed a <strong><em>Chi-Square Test</em></strong> against a significance level of <strong>0.05</strong>. The test resulted in a p-value of <strong><em>1.39E-11</em></strong> which is way below the significance level. So, the test result rejects the null hypothesis and says that the subreddit and the type of my activity are dependent. However, as we can see from the figure, the number of <em>&ldquo;vote&rdquo;</em> interactions are way higher than the number of <em>&ldquo;create&rdquo;</em> interactions. So, additionally I have also calculated Cramer&rsquo;s V to see the strength of the relationship. The result was <strong><em>0.214</em></strong> which shows a moderate strength.</p>
+<p>After combining <em>&ldquo;created&rdquo;</em> and <em>&ldquo;voted&rdquo;</em> data in a crosstable, I have perfomed a <strong><em>Chi-Square Test</em></strong> against a significance level of <strong>0.05</strong>. The test resulted in a p-value of <strong><em>1.39E-11</em></strong> which is way below the significance level. So, the test result <strong>rejects the null hypothesis</strong> and which means that the subreddit and the type of my activity are dependent. However, as we can see from the figure, the number of <em>&ldquo;vote&rdquo;</em> interactions are way higher than the number of <em>&ldquo;create&rdquo;</em> interactions. So, additionally I have also calculated Cramer&rsquo;s V to see the strength of the relationship. The result was <strong><em>0.214</em></strong> which shows a moderate strength.</p>
 <p>I also wanted to see the relationship between <em>&ldquo;voted&rdquo;</em> count and <em>&ldquo;created&rdquo;</em> count for each subreddit. The following figure shows the ratio of <em>voted</em> and total count for subreddits. Note that the figure is sorted by the total number of interactions.</p>
 <p style="margin-top: 2rem; margin-bottom: 0;"><i>Slider can be used to hide/show subreddits according to minimum number of total interactions.</i></p>
 <div class="figure-grid-wrapper" style="margin-top: 0.25rem;">

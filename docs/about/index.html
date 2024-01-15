@@ -144,12 +144,56 @@
 <div class="container">
     <h1 class="text-center my-5">About the Project</h1>
     <div style="margin-bottom: 15rem;">
-        <h1 id="my-reddit-usage-data-analysis">My Reddit Usage Data Analysis</h1>
+        <!-- Style -->
+<style>
+    #table-of-contents a {
+        /* text-decoration: none; */
+        color: #000;
+    }
+
+    #finds a {
+        /* text-decoration: none; */
+        color: #000;
+    }
+</style>
+<h1 id="my-reddit-usage-data-analysis">My Reddit Usage Data Analysis</h1>
 <br/>
 <p><strong><em>For all the details and the source code of the project, please visit the <a style="text-decoration: none;" href="https://github.com/firatbatar/my-reddit-data" target="_blank">GitHub repository</a>.</em></strong></p>
 <h2 id="description">Description</h2>
 <p>Sabanci University CS210 Introduction to Data Science Course Fall 2023-2024 Term Project.<br>
 This project will be an analysis on my own <a href="https://www.reddit.com/" target="_blank">Reddit</a> usage.</p>
+<div id="table-of-contents">
+<h2 id="table-of-contents">Table of Contents</h2>
+<p><strong><a href="#motivation">Motivation</a></strong></p>
+<p><strong><a href="#tools">Tools</a></strong></p>
+<p><strong><a href="#data-source">Data Source</a></strong></p>
+<ul>
+<li><a href="#requested-data">Requested data</a></li>
+<li><a href="#reddit-api">Reddit API</a></li>
+</ul>
+<p><strong><a href="#data-processing">Data Processing</a></strong></p>
+<p><strong><a href="#data-visualizations">Data Visualizations</a></strong></p>
+<p><strong><a href="#data-analysis">Data Analysis</a></strong></p>
+<ul>
+<li><a href="#active-times">Active Times</a></li>
+<li><a href="#my-votes-on-reddit">My Votes on Reddit</a></li>
+<li><a href="#the-type-of-my-activity-on-reddit">The Type of My Activity on Reddit</a></li>
+<li><a href="#score-of-comments-and-ownership-of-their-parent-posts">Score of Comments and Ownership of Their Parent Posts</a></li>
+</ul>
+<p><strong><a href="#findings">Findings</a></strong></p>
+<ul>
+<li><a href="#daily-activity">Daily Activity</a></li>
+<li><a href="#my-votes">My Votes on Reddit</a></li>
+<li><a href="#type-of-my-activity">The Type of My Activity on Reddit</a></li>
+<li><a href="#score-of-comments">Score of Comments and Ownership of Their Parent Posts</a></li>
+</ul>
+<p><strong><a href="#limitations">Limitations</a></strong></p>
+<ul>
+<li><a href="#data-sourced-limitations">Data Sourced Limitations</a></li>
+<li><a href="#personal-limitations">Personal Limitations</a></li>
+</ul>
+<p><strong><a href="#future-work">Future Work</a></strong></p>
+</div>
 <h2 id="motivation">Motivation</h2>
 <p>While thinking about a project I thought I might analyze my interaction with the outside world which is done mostly through social media. Since Reddit is my primary social media platform, I decided to go with that.<br>
 The motivation of this analysis is to gain a deeper understanding of my own Reddit usage patterns. By analyzing the subreddits I am subscribed to, when I am active on Reddit, and my engagement with posts and comments, I aim to gain insights into my online behavior and interests.</p>
@@ -165,16 +209,16 @@ The motivation of this analysis is to gain a deeper understanding of my own Redd
 <p>I have two main sources of data:</p>
 <ul>
 <li>Data that is directly exported from Reddit as a personal <a href="https://www.reddit.com/settings/data-request">data request</a>.</li>
-<li>Data that is scrapped using <a href="https://www.reddit.com/dev/api/">Reddit API</a> through a simple Python script using <a href="https://github.com/praw-dev/praw">PRAW</a> package, following <a href="https://github.com/reddit/reddit/wiki/API">Reddit&rsquo;s API rules</a>. Script is available in <code>reddit_api_scraping.py</code> file.</li>
+<li>Data that is scrapped using <a href="https://www.reddit.com/dev/api/">Reddit API</a> through a simple Python script using <a href="https://github.com/praw-dev/praw">PRAW</a> package, following <a href="https://github.com/reddit/reddit/wiki/API">Reddit&rsquo;s API rules</a>.</li>
 </ul>
-<p>In addition to these two, in order to create a general content type system for subreddits, I have created a Google Form to get &ldquo;tags&rdquo; annotated by hand. I wrote a Google Apps Script to automatically create a Google Form automatically from the data. Form is available <a href="https://forms.gle/cKnMTpAyFxGkHKVy5">here</a>. I have collected <strong>7</strong> responses from my friends. I have basically selected the most common tags three tags for each subreddit, but I have applied some more filtering. For details, see <code>reddit_api_scraping.py</code> file.</p>
+<p>In addition to these two, in order to create a general content type system for subreddits, I have created a Google Form to get &ldquo;tags&rdquo; annotated by hand. I wrote a Google Apps Script to automatically create a Google Form automatically from the data. Form is available <a href="https://forms.gle/cKnMTpAyFxGkHKVy5">here</a>. I have collected <strong>7</strong> responses from my friends. I have basically selected the most common tags three tags for each subreddit, but I have applied some more filtering.</p>
 <h3 id="requested-data">Requested data</h3>
 <p>Requested data is in .csv format and contains:</p>
 <ul>
-<li>Subscribed subreddits</li>
-<li>Login history</li>
-<li>Voted posts and comments</li>
-<li>Created posts and comments</li>
+<li><strong>Subscribed subreddits:</strong> Bascially the subreddits that I am subscribed to.</li>
+<li><strong>Login history:</strong> Date, time, and IP address of my logins.</li>
+<li><strong>Voted posts and comments:</strong> Id, url, and the direction of my votes (upvote or downvote) for posts and comments that I have voted.</li>
+<li><strong>Created posts and comments:</strong> Id, url, creation date, subreddit, and the ip of the device that I have created posts and comments. Comments also include the id of the post that they are created under.</li>
 </ul>
 <h3 id="reddit-api">Reddit API</h3>
 <p>Using Reddit API, I scrapped the following data:</p>
@@ -184,31 +228,53 @@ The motivation of this analysis is to gain a deeper understanding of my own Redd
 <li>The same script also combines annotated data with the raw data.</li>
 </ul>
 <p>Requested data is read by scraper script and after scrapping, it is saved as new .csv files.</p>
-<p>Then the data is processed in <code>data_process.ipynb</code> file. The process includes cleaning and structuring the data. For details on every step for each different group of data, see the mentioned file.</p>
-<h3 id="data-processing">Data Processing</h3>
-<p>The requested data and the scrapped data include many unused information and also some information that needs to be preprocessed. For all the details on the data processing, see <code>data_process.ipynb</code> file. But here is a summary of the process:</p>
+<h2 id="data-processing">Data Processing</h2>
+<p>The requested data and the scrapped data include many unused information and also some information that needs to be preprocessed. Here is a summary of the process:</p>
 <ul>
-<li><strong>Subreddits:</strong> This data also holds followed users, but I did not need them.</li>
-<li><strong>Login History:</strong> The date is in UTC, so I converted it to my local time and extracted the day name. Also IP addresses are not needed.</li>
-<li><strong>Voted Posts and Comments:</strong> The data includes some URLs about the objects, I have extracted the subreddit names from them, but I do not need the URLs themselves. Also, I have compared this data with subscribed subreddits and created a new column to indicate if the subreddit is subscribed or not.</li>
-<li><strong>Created Posts and Comments:</strong> This also includes some URLs, I have extracted the subreddit names from them and dropped the URLs. Again I have checked if the subreddit is subscribed or not. Also dropped the unnecessary columns.</li>
+<li><strong>Subreddits:</strong> This data also holds followed users, so I have dropped them. Also, during scraping available flairs and annotations are added to the data.</li>
+<li><strong>Login History:</strong> The raw date was in UTC, so I converted it to my local time and extracted the day name. Also IP addresses are removed.</li>
+<li><strong>Voted Posts and Comments:</strong> I basically needed the URLs and the IDs to compare with other data, but did not needed themselves. So, I have extracted the subreddit name, checked if the subreddit is subscribed or not, and what is the score of the post/comment (if it is available) and made vote direction an integer. I have dropped the every other column.</li>
+<li><strong>Created Posts and Comments:</strong> Similar to the previous one, I have extracted the subreddit name, checked if the subreddit is subscribed or not, and what is the score of the post/comment (if it is available). I have dropped the every other column. Additionally, for comments, I checked if I was the owner of the parent post that the comment is created under.</li>
 </ul>
-<h3 id="data-visualizations">Data Visualizations</h3>
-<p>Almost all the visualizations, the ones that are specific to an analysis are not here, are made in <code>data_visualization.ipynb</code> file. During the EDA, I have created many visualizations to understand the data better and to come up with interesting questions. Not all the visualizations are used and included in the final report. However, all can be found in the notebook.</p>
+<h2 id="data-visualizations">Data Visualizations</h2>
+<p>During the EDA, I have created many visualizations to understand the data better and to come up with interesting questions. Not all the visualizations are used and included in the final report.</p>
 <p>I have used Altair for most of the visualizations. Altair is a declarative statistical visualization library for Python, based on Vega. I used Altair because it is very easy to use and very powerful, I wanted to create all my visualizations interactive so that EDA and final report is more clear and interesting.</p>
-<h3 id="data-analysis">Data Analysis</h3>
-<p>All the analysis is done in <code>data_analysis.ipynb</code> file. Notebook is structured and commented in a way that it can be followed easily. In addition to the statistical tests, the notebook also includes some of the visualizations that are used in the report. Again (almost) all the visualizations are made using Altair so they are interactive.</p>
-<p>The details of the analysis can be found in the notebook, but the final report is in its <a href="https://firatbatar.com/my-reddit-usage">own website</a>.</p>
+<h2 id="data-analysis">Data Analysis</h2>
+<p>In addition to the statistical tests, the analysis also includes some visualizations but not all are used in the report. Again (almost) all the visualizations are made using Altair so they are interactive.</p>
+<p>For the details of the analysis their <a href="https://firatbatar.com/my-reddit-usage/analysis/">page</a>. Here is a short summary:</p>
+<h3 id="active-times">Active Times</h3>
+<p>I tried to look at my active times on Reddit to see if there is any pattern. I have looked at the days of the week and the hours of the day. Compared different days and hours to see if there is any difference. And also looked at how they compare to my school schedule.</p>
+<h3 id="my-votes-on-reddit">My Votes on Reddit</h3>
+<p>I wanted to what can affect my voting behavior. I have looked at the score of the posts and comments that I have voted and also the type of the subreddit that they are in. I used the tags that I have created using human annotators to classify the subreddits.</p>
+<h3 id="the-type-of-my-activity-on-reddit">The Type of My Activity on Reddit</h3>
+<p>To see if my general interaction behavior is affected by what and how, I have looked to subreddits, their tags, and my subscription status.</p>
+<h3 id="score-of-comments-and-ownership-of-their-parent-posts">Score of Comments and Ownership of Their Parent Posts</h3>
+<p>I wanted to see if the score of my comments is affected by whether I am the owner of the parent post or not. I have looked at the score of my comments and the ownership of the parent post.</p>
 <h2 id="findings">Findings</h2>
-<p><em>For the detailed findings, please visit the <a href="https://firatbatar.com/my-reddit-usage">report</a>.</em></p>
-<p>Through this analysis, I discovered:</p>
+<div id="finds">
+<p><em>For the detailed findings, please visit the <a href="https://firatbatar.com/my-reddit-usage/analysis/">report</a>.</em></p>
+<h3 id="a-iddaily-activity-hrefhttpsfiratbatarcommy-reddit-dataanalysislogins-target_blankdaily-activitya"><a id="daily-activity" href="https://firatbatar.com/my-reddit-data/analysis/logins/" target="_blank">Daily Activity</a></h3>
 <ul>
-<li>Patterns in my Reddit usage times and correlations with my class schedule.</li>
-<li>Voting patterns on posts/comments, including preferences based on subreddits and their tags.</li>
-<li>Self-reflection on my own contributions through posts/comments and their respective subreddits and tags.</li>
-<li>The factors that affect the way I interact on Reddit.</li>
-<li>How I start, join, and contribute to discussions on Reddit.</li>
+<li>During weekdays I am more active on Reddit during the class hours, except for wednesdays and thursdays.</li>
+<li>During weekends I am more active on Reddit in the afternoon.</li>
 </ul>
+<h3 id="a-idmy-votes-hrefhttpsfiratbatarcommy-reddit-dataanalysismyvotes-target_blankmy-votes-on-reddita"><a id="my-votes" href="https://firatbatar.com/my-reddit-data/analysis/myvotes/" target="_blank">My Votes on Reddit</a></h3>
+<p>My votes are,</p>
+<ul>
+<li>mostly upvotes,</li>
+<li>not affected by the score of the post/comment,</li>
+<li>affected by the type of the subreddit.</li>
+</ul>
+<h3 id="a-idtype-of-my-activity-hrefhttpsfiratbatarcommy-reddit-dataanalysisvotedandcreated-target_blankthe-type-of-my-activity-on-reddita"><a id="type-of-my-activity" href="https://firatbatar.com/my-reddit-data/analysis/votedandcreated/" target="_blank">The Type of My Activity on Reddit</a></h3>
+<p>My behavior on Reddit, interact with others via voting or creating content, is</p>
+<ul>
+<li>affected by the subreddits,</li>
+<li>affected by the type of the subreddit,</li>
+<li>not affected by whether I am subscribed to the subreddit or not.</li>
+</ul>
+<h3 id="a-idscore-of-comments-hrefhttpsfiratbatarcommy-reddit-dataanalysiscommentscoreownership-target_blankscore-of-comments-and-ownership-of-their-parent-postsa"><a id="score-of-comments" href="https://firatbatar.com/my-reddit-data/analysis/commentscoreownership/" target="_blank">Score of Comments and Ownership of Their Parent Posts</a></h3>
+<p>The amount of interaction with my comments is not affected by whether I am the owner of the parent post or not.</p>
+</div>
 <h2 id="limitations">Limitations</h2>
 <p>The limitations can be generally separated into two categories:</p>
 <h3 id="data-sourced-limitations">Data Sourced Limitations</h3>
