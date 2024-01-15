@@ -5,6 +5,8 @@
 Sabanci University CS210 Introduction to Data Science Course Fall 2023-2024 Term Project.  
 This project will be an analysis on my own <a href="https://www.reddit.com/" target="_blank">Reddit</a> usage.
 
+For the final report see [here](https://firatbatar.com/reddit-usage-analysis).
+
 ## Table of Contents
 **[Motivation](#motivation)**  
 
