@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Fırat Batar - Reddit Data Analysis</title>
-    <link>http://firatbatar.com/my-reddit-data/</link>
+    <link>http://firatbatar.com/reddit-usage-analysis/</link>
     <description>Recent content on Fırat Batar - Reddit Data Analysis</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://firatbatar.com/my-reddit-data/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://firatbatar.com/reddit-usage-analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Daily Activity</title>
-      <link>http://firatbatar.com/my-reddit-data/analysis/logins/</link>
+      <link>http://firatbatar.com/reddit-usage-analysis/analysis/logins/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://firatbatar.com/my-reddit-data/analysis/logins/</guid>
+      <guid>http://firatbatar.com/reddit-usage-analysis/analysis/logins/</guid>
       <description>An analysis on the date and times I&amp;rsquo;ve logged in to Reddit.</description>
     </item>
     <item>
       <title>My Votes on Reddit</title>
-      <link>http://firatbatar.com/my-reddit-data/analysis/myvotes/</link>
+      <link>http://firatbatar.com/reddit-usage-analysis/analysis/myvotes/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://firatbatar.com/my-reddit-data/analysis/myvotes/</guid>
+      <guid>http://firatbatar.com/reddit-usage-analysis/analysis/myvotes/</guid>
       <description>An analysis on my voting behavior on Reddit.</description>
     </item>
     <item>
       <title>The Type of My Activity on Reddit</title>
-      <link>http://firatbatar.com/my-reddit-data/analysis/votedandcreated/</link>
+      <link>http://firatbatar.com/reddit-usage-analysis/analysis/votedandcreated/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://firatbatar.com/my-reddit-data/analysis/votedandcreated/</guid>
+      <guid>http://firatbatar.com/reddit-usage-analysis/analysis/votedandcreated/</guid>
       <description>An analysis on two different type of my activity, content creation and voting on existing content, on Reddit.</description>
     </item>
     <item>
       <title>Score of Comments and Ownership of Their Parent Posts</title>
-      <link>http://firatbatar.com/my-reddit-data/analysis/commentscoreownership/</link>
+      <link>http://firatbatar.com/reddit-usage-analysis/analysis/commentscoreownership/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://firatbatar.com/my-reddit-data/analysis/commentscoreownership/</guid>
+      <guid>http://firatbatar.com/reddit-usage-analysis/analysis/commentscoreownership/</guid>
       <description>An analysis on the score of comments and ownership of their parent posts.&amp;quot;</description>
     </item>
   </channel>

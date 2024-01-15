@@ -119,23 +119,23 @@ I wanted to see if the score of my comments is affected by whether I am the owne
 
 _For the detailed findings, please visit the [report](https://firatbatar.com/my-reddit-usage)._
 
-### <a id="daily-activity" href="https://firatbatar.com/my-reddit-data/analysis/logins/" target="_blank">Daily Activity</a>
+### <a id="daily-activity" href="https://firatbatar.com/reddit-usage-analysis/analysis/logins/" target="_blank">Daily Activity</a>
 - During weekdays I am more active on Reddit during the class hours, except for wednesdays and thursdays.
 - During weekends I am more active on Reddit in the afternoon.
 
-### <a id="my-votes" href="https://firatbatar.com/my-reddit-data/analysis/myvotes/" target="_blank">My Votes on Reddit</a>
+### <a id="my-votes" href="https://firatbatar.com/reddit-usage-analysis/analysis/myvotes/" target="_blank">My Votes on Reddit</a>
 My votes are,
 - mostly upvotes,
 - not affected by the score of the post/comment,
 - affected by the type of the subreddit.
 
-### <a id="type-of-my-activity" href="https://firatbatar.com/my-reddit-data/analysis/votedandcreated/" target="_blank">The Type of My Activity on Reddit</a>
+### <a id="type-of-my-activity" href="https://firatbatar.com/reddit-usage-analysis/analysis/votedandcreated/" target="_blank">The Type of My Activity on Reddit</a>
 My behavior on Reddit, interact with others via voting or creating content, is 
 - affected by the subreddits,
 - affected by the type of the subreddit,
 - not affected by whether I am subscribed to the subreddit or not.
 
-### <a id="score-of-comments" href="https://firatbatar.com/my-reddit-data/analysis/commentscoreownership/" target="_blank">Score of Comments and Ownership of Their Parent Posts</a>
+### <a id="score-of-comments" href="https://firatbatar.com/reddit-usage-analysis/analysis/commentscoreownership/" target="_blank">Score of Comments and Ownership of Their Parent Posts</a>
 The amount of interaction with my comments is not affected by whether I am the owner of the parent post or not.
 
 ## Limitations
