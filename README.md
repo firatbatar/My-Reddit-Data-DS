@@ -101,7 +101,7 @@ I have used Altair for most of the visualizations. I have used it because it is 
 
 ## Data Analysis
 
-All the analysis is done in `data_analysis.ipynb` file. Notebook is structured and commented in a way that it can be followed easily. In addition to the statistical tests, the notebook also includes some of the visualizations that are used in the report. Again (almost) all the visualizations are made using Altair so they are interactive. The final report is in its [own website](https://firatbatar.com/my-reddit-usage).  
+All the analysis is done in `data_analysis.ipynb` file. Notebook is structured and commented in a way that it can be followed easily. In addition to the statistical tests, the notebook also includes some of the visualizations that are used in the report. Again (almost) all the visualizations are made using Altair so they are interactive. The final report is in its [own website](https://firatbatar.com/reddit-usage-analysis).  
 
 ### Active Times
 I tried to look at my active times on Reddit to see if there is any pattern. I have looked at the days of the week and the hours of the day. Compared different days and hours to see if there is any difference. And also looked at how they compare to my school schedule.
@@ -117,7 +117,7 @@ I wanted to see if the score of my comments is affected by whether I am the owne
 
 ## Findings
 
-_For the detailed findings, please visit the [report](https://firatbatar.com/my-reddit-usage)._
+_For the detailed findings, please visit the [report](https://firatbatar.com/reddit-usage-analysis)._
 
 ### <a id="daily-activity" href="https://firatbatar.com/reddit-usage-analysis/analysis/logins/" target="_blank">Daily Activity</a>
 - During weekdays I am more active on Reddit during the class hours, except for wednesdays and thursdays.
